@@ -1,1 +1,1 @@
-console.log('This would be the main JS file.');
+console.log('Hello developer. Welcome to dward.io! Now quit hacking around!');
