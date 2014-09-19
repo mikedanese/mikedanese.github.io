@@ -5,3 +5,4 @@ defaults:
     values:
       title: dward.io
       splash: true
+      layout: default
