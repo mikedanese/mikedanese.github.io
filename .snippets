@@ -1,8 +1,6 @@
----
-layout: default
----
+// mardownify includes
 
 {% capture include_to_markdownify %}
-{% include home_page.md %}
+{% include about/content.md %}
 {% endcapture %}
 {{ include_to_markdownify | markdownify }}
