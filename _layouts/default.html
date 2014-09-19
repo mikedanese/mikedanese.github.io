@@ -1,32 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-    <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen">
-    <link rel="icon" type="image/png" href="/favicon.ico">
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/javascripts/main.js"></script>
-    <title>dward.io</title>
+    <meta charset="utf-8">
+    <title>Bootswatch: Journal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="/stylesheets/bootswatch.min.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/javascript/html5shiv.js"></script>
+      <script src="/javascript/respond.min.js"></script>
+    <![endif]-->
   </head>
-
   <body>
-
-    <header>
+    <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <h1>dward.io</h1>
-        <section id="downloads">
-          <a href="https://github.com/mikedanese" class="btn btn-github"><span class="icon"></span>View my stuff on GitHub</a>
-        </section>
+        <div class="navbar-header">
+          <a href="/" class="navbar-brand">dward.io</a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="/posts">Posts</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>
-
+    </div>
+    {% if page.splash == true %}
+      {% include splash.html %}
+    {% endif %}
     <div class="container">
-      <section id="main_content">
-        {{ content }}
-      </section>
-    </div>    
+      {{ content }}
+    </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/bootswatch.js"></script>
   </body>
 </html>
