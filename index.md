@@ -5,4 +5,4 @@ splash: true
 
 ### welcome to dward.io
 
-here, you will find opinions on computer science and mathematics.
+Here, you will find opinions on computer science and mathematics. If you prefer poetry and short stories, let me redirect you to [this spot](http://themustachefactory.com).
