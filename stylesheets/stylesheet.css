@@ -3,8 +3,9 @@
   background-image: url('/images/streogram.gif');
 }
 
-.footer {
-	position: fixed;
-	bottom: 0px;
-	right: 10px
+code.has-jax {
+	font: inherit; 
+	font-size: 100%; 
+	background: inherit; 
+	border: inherit;
 }
